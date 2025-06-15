@@ -1,17 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Image from './Image';
-import Gallery from './Gallery';
-import Clock from './Clock';
-import Form from './Form';
-import Counter from './Counter';
+import React from 'react';
+import { useState } from 'react';
 
-function App() {
-  return (
-   <>
-       <Counter/>
-   </>
-  );
-}
+
+  function App() {
+    return (
+      <>
+        
+      </>
+    )
+  }
 
 export default App;
