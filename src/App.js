@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Image from './Image';
+import Gallery from './Gallery';
 
 function App() {
   return (
    <>
-      <Image />
+     <Gallery/>
    </>
   );
 }
