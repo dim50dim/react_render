@@ -4,11 +4,12 @@ import Image from './Image';
 import Gallery from './Gallery';
 import Clock from './Clock';
 import Form from './Form';
+import Counter from './Counter';
 
 function App() {
   return (
    <>
-       <Form/>
+       <Counter/>
    </>
   );
 }

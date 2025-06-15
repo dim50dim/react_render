@@ -5,7 +5,12 @@ export default function Counter() {
     
     return (
         <>
-        
+          <h1>{number}</h1>
+          <button onClick={() => {
+        setNumber(1 + 1)
+        setNumber(1 + 1)
+        setNumber(1 + 1)
+          }}>Push here</button>
         </>
     )
 }
