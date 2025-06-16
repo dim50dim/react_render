@@ -17,16 +17,16 @@ export default function Form () {
           }
 
           function handleTitleChange(e) {
-            setPerson({
-                ...person,
-                artwork: {
-                     ...person.artwork,
-                     title: e.target.value
-                }
-            })
+       setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        title: e.target.value
+      }
+    });
           }
 
-          
+
           function handleCityChange(e) {
             setPerson({
                 ...person,
