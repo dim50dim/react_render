@@ -55,15 +55,15 @@ export default function Form () {
                 </label>
                 <label>
                       Title: 
-                      <input value={person.title} onChange={handleTitleChange} />
+                      <input value={person.artwork.title} onChange={handleTitleChange} />
                 </label>
                 <label>
                     City: 
-                    <input value={person.city} onChange={handleCityChange} />
+                    <input value={person.artwork.city} onChange={handleCityChange} />
                 </label>
                 <label>
                     Image: 
-                    <input value={person.image} onChange={handleImageChange} />
+                    <input value={person.artwork.image} onChange={handleImageChange} />
                 </label>
                 <p>
                     <i>{person.artwork.title}</i>
