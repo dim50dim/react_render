@@ -1,7 +1,8 @@
-import { useState } from "react"
+// import { useState } from "react"
+import {useImmer} from 'use-immer';
 
 export default function Form () {
-          const [person,setPerson] = useState({
+          const [person,setPerson] = useImmer({
             name : 'Niki de Saint Phalle',
             artwork: {
                 title: 'Blue Nana',
