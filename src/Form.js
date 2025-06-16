@@ -2,7 +2,7 @@
 import {useImmer} from 'use-immer'
 
 export default function Form () {
-          const [person,setPerson] = useImmer({
+          const [person,updatePerson] = useImmer({
             name : 'Niki de Saint Phalle',
             artwork: {
                 title: 'Blue Nana',
@@ -11,41 +11,28 @@ export default function Form () {
             }
           });
           function handleNameChange(e) {
-            setPerson({
-                ...person,
-                name: e.target.value
-            });
+              updatePerson(draft => {
+                draft.name = e.target.value;
+              });
           }
 
           function handleTitleChange(e) {
-       setPerson({
-      ...person,
-      artwork: {
-        ...person.artwork,
-        title: e.target.value
-      }
-    });
+           updatePerson(draft => {
+            draft.title = e.target.value;
+           })
           }
 
 
           function handleCityChange(e) {
-            setPerson({
-                ...person,
-                artwork: {
-                    ...person.artwork,
-                    city : e.target.value
-                }
-            });
+                  updatePerson(draft=> {
+                    draft.city = e.target.value;
+                  })
           }
 
           function handleImageChange(e) {
-            setPerson({
-                ...person,
-                artwork: {
-                    ...person.artwork,
-                    image: e.target.value
-                }
-            })
+                   updatePerson(draft=> {
+                    draft.image = e.target.value;
+                   })
           }
           return (
             <>
