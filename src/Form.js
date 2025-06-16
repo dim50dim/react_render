@@ -26,6 +26,7 @@ export default function Form () {
             })
           }
 
+          
           function handleCityChange(e) {
             setPerson({
                 ...person,
